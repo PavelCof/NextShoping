@@ -6,7 +6,11 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Каталог приложений NextShoping",
+  title: {
+    absolute:"Каталог приложений NextShoping",
+    default:"NextShoping",
+    template:"Проект %s | NextShoping"
+  },
   description: "Каталог приложений NextShoping",
 };
 

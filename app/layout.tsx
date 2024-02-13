@@ -5,8 +5,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Магазин приложений NextShoping",
-  description: "Магазин приложений",
+  title: {
+    absolute:"Каталог приложений NextShoping",
+    default:"NextShoping",
+    template:"%s | NextShoping"
+  },
+  description: "Каталог приложений NextShoping",
 };
 
 export default function RootLayout({

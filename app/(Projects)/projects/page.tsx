@@ -1,7 +1,12 @@
-'use client'
+ 
 import Image from "next/image";
 import Link from "next/link";
 import ProjectView from "@/app/(Projects)/projects/project/ProjectView";
+import type { Metadata } from "next";
+
+export const metadata:Metadata ={
+    title:"Все проекты"
+}
 
 const projs = [1,2,3]
 

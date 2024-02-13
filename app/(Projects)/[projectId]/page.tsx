@@ -2,6 +2,8 @@ import { Metadata } from "next"
 import {notFound} from "next/navigation"
 import { resolve } from "path"
 
+
+
 interface Params {params:{projectId:string}}
 
 //Формируем заголовок из параметров
