@@ -11,6 +11,7 @@ export default function Home() {
     {name:"О компании",url:"/about"},
 
   ]
+
   return (
 
        <div className="flex flex-row gap-5"> 
@@ -20,6 +21,7 @@ export default function Home() {
               })
 
               }
+             
         </div>
 
  

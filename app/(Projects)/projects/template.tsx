@@ -25,13 +25,15 @@ export default function RootLayout({
 
   ]
   const pathname =usePathname()
-
+  if(links.length>0){
+    throw new Error("error")
+  }
   return (
  <div className="h-full"> 
              <div  className="flex flex-row gap-5 ">
-              {links.map((link)=>{
+              {links.map((link,index)=>{
                   const isActive = pathname.startsWith(link.url)
-                return <Link className={isActive ?`text-red-600 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 `:"text-sky-800 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 "} href={link.url} >{link.name}</Link>
+                return <Link key={index} className={isActive ?`text-red-600 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 `:"text-sky-800 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 "} href={link.url} >{link.name}</Link>
               })
 
               }
