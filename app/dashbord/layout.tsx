@@ -1,12 +1,15 @@
-import UserAnalytic from "./@analytic/page";
-import Notifications from "./@notifications/page";
-import RevenueMatrics from "./@revenue/page";
-
 
 export default function DashbordLayout(
-    {children , analytic, revenue, notifications}:
-    {children:React.ReactNode,analytic:React.ReactNode,revenue:React.ReactNode,notifications:React.ReactNode}) {
-    return (
+    {children , analytic, revenue, notifications, login}:
+    {   
+        children:React.ReactNode,
+        analytic:React.ReactNode,
+        revenue:React.ReactNode,
+        notifications:React.ReactNode, 
+        login:React.ReactNode
+    }) {
+        const isLoggedIn = false
+    return isLoggedIn ? (
         <div  >
             <div>{children}</div>
             <div className="flex flex-row w-full"> 
@@ -14,8 +17,7 @@ export default function DashbordLayout(
                 <div>{revenue}</div>
             </div>
             <div>{notifications}</div>
-        </div>
-    )
+        </div>) : (login)
 }
+  
 
-//git commit -m "Создание пользовательского интерфейса с параллельными маршрутами @component "

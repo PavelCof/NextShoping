@@ -6,9 +6,10 @@ const  Card =({children}:{children:React.ReactNode})=>{
         border:"1px solid #ccc",
         distlay:"flex",
         justyfyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        borderRadius:"15px"
     }
-    
+
     return  <div style={cardStyle}>{children}</div>
 }
 

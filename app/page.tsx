@@ -9,6 +9,7 @@ export default function Home() {
     {name:"На главную",url:"/"},
     {name:"Проекты",url:"/projects"},
     {name:"О компании",url:"/about"},
+    {name:"Дашборд",url:"/dashbord"},
 
   ]
 
