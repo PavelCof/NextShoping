@@ -14,9 +14,9 @@ export default function Home() {
   return (
 
        <div className="flex flex-row gap-5"> 
-              {links.map((link)=>{
+              {links.map((link, index)=>{
                   const isActive = pathname.startsWith(link.url)
-                return <Link className={isActive ?`text-red-600 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 `:"text-sky-800 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 "} href={link.url} >{link.name}  </Link>
+                return <Link key={index} className={isActive ?`text-red-600 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 `:"text-sky-800 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 "} href={link.url} >{link.name}  </Link>
               })
 
               }

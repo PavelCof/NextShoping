@@ -27,7 +27,7 @@ export default function RootLayout({
   const pathname =usePathname()
 
   return (
- <div className="h-full">
+ <div className="h-full"> 
              <div  className="flex flex-row gap-5 ">
               {links.map((link)=>{
                   const isActive = pathname.startsWith(link.url)
