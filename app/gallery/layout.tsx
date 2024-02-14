@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Home() {
+export default function GalleryLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   const pathname =usePathname()
   const links = [
     {name:"На главную",url:"/"},
@@ -17,14 +21,14 @@ export default function Home() {
 
   return (
 
-       <div className="flex flex-row gap-5"> 
+       <div className=" gap-5 h-full w-full mb-11"> 
               {links.map((link, index)=>{
                   const isActive = pathname.startsWith(link.url)
-                return <Link key={index} className={isActive ?`text-red-600 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 `:"text-sky-800 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 "} href={link.url} >{link.name}  </Link>
+                return <Link key={index} className={isActive ?`text-red-600 underline h-10 decoration-slate-500 underline-offset-2 hover:decoration-slate-100 `:"text-sky-800 underline decoration-slate-500 underline-offset-2 hover:decoration-slate-100 h-10"} href={link.url} >{link.name}  </Link>
               })
 
               }
-             
+              <div className=" h-full"> {children}</div>
         </div>
 
  

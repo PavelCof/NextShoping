@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <main className="relative flex min-h-screen flex-col items-center justify-between p-7 min-w-[331px]">
         <div className="z-10   w-full flex flex-col absolute top-0 bottom-0 left-0 right-0  font-mono  text-gray-700 h-full  min-w-[331px]">
-            <div className="pt-7  text-3xl  flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] 
+            <div className=" text-3xl  flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] 
                 before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent 
                 before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] 
                 after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] 
@@ -32,7 +32,7 @@ export default function RootLayout({
                 >
                     NextShoping
             </div> 
-            <div className="h-full w-full px-7 mb-8">
+            <div className="h-full w-full px-7 mb-11 overflow-hidden">
             {children}      </div>
             <div className="  h-8 bg-opacity-50 text-sky-800"> footer</div>
           </div>
