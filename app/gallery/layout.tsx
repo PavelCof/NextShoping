@@ -3,11 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function GalleryLayout({
-  children,
-}: Readonly<{
+export default function GalleryLayout(props: {
+  modal: React.ReactNode;
   children: React.ReactNode;
-}>) {
+}) {
   const pathname =usePathname()
   const links = [
     {name:"На главную",url:"/"},
@@ -28,7 +27,8 @@ export default function GalleryLayout({
               })
 
               }
-              <div className=" h-full"> {children}</div>
+              {props.modal}
+              <div className=" h-full"> {props.children}</div>
         </div>
 
  
