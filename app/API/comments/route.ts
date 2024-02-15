@@ -7,7 +7,7 @@ import { NextRequest } from "next/server"
 //     return Response.json(comments)
 // }
 
-//запрос GET с параметрами (поиск сомментария с текстом из параметра query) comments/?query="text"
+//запрос GET с параметрами (поиск сомментария с текстом из параметра query) comments/?query=text 
 export async function GET(request:NextRequest) {
 
     const searchParams = request.nextUrl.searchParams
