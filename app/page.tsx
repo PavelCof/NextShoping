@@ -12,6 +12,7 @@ export default function Home() {
     {name:"Дашборд",url:"/dashbord"},
     {name:"Маршруты перехвата (.)",url:"/folder1"},
     {name:"Маршруты перехвата (.) Галлерея",url:"/gallery"},
+    {name:"API Route",url:"/API"},
 
   ]
 
