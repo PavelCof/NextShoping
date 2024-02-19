@@ -10,7 +10,7 @@ interface Params {params:{projectId:string}}
 export const generateMetadata = async ({params}:Params):Promise<Metadata> =>{
     const title = await new Promise(resolve=>{
         setTimeout(() => {
-            resolve(`Xiaomi ${params.projectId} pro`)
+            resolve(`Next ${params.projectId} pro`)
         }, 100);
     })
     return {title:`Проект ${title}`}

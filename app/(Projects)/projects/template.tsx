@@ -25,9 +25,9 @@ export default function RootLayout({
 
   ]
   const pathname =usePathname()
-  if(links.length>0){
-    throw new Error("error")
-  }
+  // if(links.length>0){
+  //   throw new Error("error")
+  // }
   return (
  <div className="h-full"> 
              <div  className="flex flex-row gap-5 ">
