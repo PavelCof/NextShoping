@@ -10,6 +10,7 @@ export default function Home() {
     {name:"Проекты",url:"/projects"},
     {name:"О компании",url:"/about"},
     {name:"Дашборд",url:"/dashbord"},
+    {name:"[...slug]",url:"/1/docs/test/test1"},
     {name:"Маршруты перехвата (.)",url:"/folder1"},
     {name:"Маршруты перехвата (.) Галлерея",url:"/gallery"},
     {name:"API Route",url:"/API"},
